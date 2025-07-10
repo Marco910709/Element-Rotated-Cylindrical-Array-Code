@@ -85,6 +85,6 @@ sidelobe=[ff_pco(1:indxlow1);ff_pco(indxlow2:end);ff_px];
 xi=sidelobe-DSLL;
 k1=numel(x_m);
 k2=numel(sidelobe);
-y=(sum((0.5*(x_m+abs(x_m))).^2)+sum(( 0.5*(xi+abs(xi)) ).^2))/(k1+k2);
+y=(5*sum((0.5*(x_m+abs(x_m))).^2)+sum(( 0.5*(xi+abs(xi)) ).^2))/(k1+k2);
 
 end
